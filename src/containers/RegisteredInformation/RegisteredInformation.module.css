@@ -1,0 +1,65 @@
+.RegisteredInformation {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.text {
+    position: relative;
+    margin-left: 2rem;
+    font-size: 4em;
+    font-weight: 900;
+    color: #fff;
+    z-index: 1;
+    overflow: hidden;
+}
+
+@keyframes animate {
+    0% {
+        left: 110%;
+    }
+    100% {
+        left: -5%;
+    }
+}
+
+.text:before {
+    content: '';
+    position: absolute;
+    left: 120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 0%, #000 5%, #000 100%);
+    animation: animate 5.5s linear forwards;
+    animation-delay: 1s;
+    animation-duration: 2s;
+}
+
+.span {
+    color: #f06c14;
+}
+
+.span2 {
+    color: #fffb02;
+}
+
+.span3 {
+    color: #a0e273;
+}
+
+.span4 {
+    color: #4338e7;
+}
+
+.span5 {
+    color: #6157e2;
+}
+
+@media (max-width: 767px) {
+    .text {
+        font-size: 1.5em;
+        font-weight: 900;
+        margin-left: 05rem;
+    }
+}
