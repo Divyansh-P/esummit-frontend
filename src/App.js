@@ -29,7 +29,7 @@ function App() {
           <Route path="/contact-us" ><Contact /></Route>
           <Route path="/form"><Register1 />  </Route>
           <Route path='/team member' ><TeamMember /></Route>
-          <Route path="/register"><Register /></Route>
+          {/* <Route path="/register"><Register /></Route> */}
           <Route path="/teams"><Team/></Route>
         </Switch>
         <Cube />
