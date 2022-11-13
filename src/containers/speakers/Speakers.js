@@ -1,6 +1,4 @@
 import ProfileCard1 from './ProfileCard1';
-import ProfileCard2 from './ProfileCard2/ProfileCard2';
-import SpeakerCard from './SpeakerCard';
 import classes from './speakers.module.css'
 import { useState,useEffect } from 'react';
 import axios from 'axios';
@@ -8,7 +6,7 @@ import axios from 'axios';
 const Speakers = () => {
       const [speakers,setspeakers]=useState([ ]);
     useEffect(()=>{
-      axios.get('/speakers').then((res)=>{
+      axios.get('https://esummit-backend.onrender.com/speakers').then((res)=>{
           console.log(res);
           setspeakers(res.data);
       })
@@ -27,6 +25,7 @@ const Speakers = () => {
                 </div> ))
             }
         
+            {/* <ProfileCard1  /> */}
             
             
             </div>

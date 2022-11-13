@@ -1,10 +1,5 @@
 import React from 'react';
 import './AboutUs.css';
-
-
-import {Button2} from './Button';
-import img1 from '../../images/p6.png';
-import { AiFillContainer } from 'react-icons/ai';
 import ProfileCard2 from '../speakers/ProfileCard2/ProfileCard2';
 const AboutUs = () => {
     return ( 

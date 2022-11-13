@@ -45,9 +45,9 @@ const Navbar = () => {
         <aside className={(show1?"sidebar show-sidebar":'sidebar') }  >
         <div className="sidebar-header">
           <img src={p} className="logo" alt="" />
-          <button className="close-btn" onClick={closehandler}><i className="fas fa-times"></i></button>
+          <div className="close-btn" onClick={closehandler}><i className="fas fa-times"></i></div>
         </div>
-        <ul className="links">
+        <ul className="links1">
           <li>
             <Link to='/' onClick={closehandler}>home</Link>
           </li>

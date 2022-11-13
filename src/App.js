@@ -5,9 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Events from './containers/Events/Events';
 import Navbar from './containers/Navbar/Navbar';
 import Sponsers from './containers/Sponsers/Sponsers';
-import TeamMember from './containers/TeamMember/TeamMember'
 import Contact from './containers/contact/component/contact/Contact'
-import Profile from './containers/Profile/Profile';
 import Register from './containers/Register/RegisterCards/Register';
 import Register1 from './containers/Register/Register1';
 import Home from './containers/Home/Home';
@@ -28,11 +26,10 @@ function App() {
           <Route path="/sponsers" ><Sponsers /></Route>
           <Route path="/contact-us" ><Contact /></Route>
           <Route path="/form"><Register1 />  </Route>
-          <Route path='/team member' ><TeamMember /></Route>
-          {/* <Route path="/register"><Register /></Route> */}
+          <Route path="/register"><Register /></Route>
           <Route path="/teams"><Team/></Route>
         </Switch>
-        <Cube />
+        {/* <Cube /> */}
       </div>
 
     </Router>

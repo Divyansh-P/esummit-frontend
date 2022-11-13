@@ -35,7 +35,7 @@
     .UpperSection img {
         display: inline-block;
         min-width: 14rem;
-        height: 7rem;
+        height: auto;
         border: none;
     }
     .UpperSection p {
@@ -43,4 +43,5 @@
         color: white;
         margin: auto;
     }
+    
 }

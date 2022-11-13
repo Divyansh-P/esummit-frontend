@@ -4,26 +4,17 @@
     box-sizing: border-box;
 }
 
-/* body {
-    display: flex;
-    align-items: center;
-    justify-contentz: center;
-    min-height: 100vh;
-} */
-
 .containerz {
     position: relative;
-    width: 20rem;
-    height: 31rem;
+    width: 95%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     background: linear-gradient(#0f0cc4, #2196f3 50%,#1d3548 80%);
-    /* background-color: #121212; */
     border-radius:20px ;
-    /* background-color: red; */
-    margin: 0.5rem;
+    margin: 0.5rem auto;
 }
 
 .containerz .cardz {
@@ -149,3 +140,30 @@
         
     }
   }
+@media only screen and (max-width:500px) {
+    
+    .containerz {
+       
+        width: 16rem;
+        height: 23rem;
+        
+    }
+  }
+/* @media only screen and (max-width: 400px) {
+    
+    .containerz {
+       
+        width: 15rem;
+        height: 23rem;
+        
+    }
+  }
+@media only screen and (max-width: 300px) {
+    
+    .containerz {
+       
+        width: 14rem;
+        height: 18rem;
+        
+    }
+  } */

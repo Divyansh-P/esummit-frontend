@@ -1,162 +1,153 @@
 @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@1,300&display=swap');
-.card{
+.card {
     position: relative;
-    width: 700px;
-    height: 700px;
-    background: #fff;
+    /* width: 60vw; */
+    height: auto;
+    background: rgb(10, 10, 10);
     transform-style: preserve-3d;
     transform: perspective(1000px);
     box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
-    margin: 1.5rem;
     border-radius: 20px;
-    
-}
-.card:hover{
-    transform: translateX(50%) ;
-    
 }
 
-.imgBox{
+.card:hover {
+    transform: translateX(50%) ;
+}
+
+.imgBox {
     position: relative;
-    width: 100%;
-    height: 100%;
+    min-height: 70vh;
+    width: 50vw;
     z-index: 1;
     transform-origin: left;
     transform-style: preserve-3d;
-    background: white;
-    transition: 1s;  
+    background: rgb(7, 7, 7);
+    transition: 1s;
     border-radius: 20px;
-    box-shadow: 6px 2px 16px 0px rgba(44, 46, 48, 0.48) , -6px -2px 16px 0px rgba(0, 0, 0, 0.8);
-    padding: 2rem;
-    
+    box-shadow: 6px 2px 16px 0px rgba(44, 46, 48, 0.48), -6px -2px 16px 0px rgba(0, 0, 0, 0.8);
+    padding: 3rem;
 }
-.card:hover .imgBox{
+
+.card:hover .imgBox {
     transform: rotateY(-180deg);
 }
-.imgBox .imga{
-    margin-top: 100px;
-    margin-left: 20px;
-    width: 680px;
-    height: auto;
-    background-color:white ;
+
+.imgBox .imga {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-color: white;
 }
-.imgBox img{
+
+.imgBox .imgb {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-color: white;
+}
+
+.imgBox img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     object-fit: cover;
     backface-visibility: hidden;
     border-radius: 20px;
 }
-.imgb{
+
+.imgb {
     transform: rotateY(180deg);
 }
-.details{
+
+.details {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    height: 70vh;
+    width: 50vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
     padding-left: 3rem;
-    /* background-color: rgb(109, 100, 100); */
-    background: #171717;
-    box-shadow: 6px 2px 16px 0px rgba(44, 46, 48, 0.48) , -6px -2px 16px 0px rgba(0, 0, 0, 0.8);
-
-    color: white;
+    background: #000000;
+    box-shadow: 6px 2px 5px 5px rgba(255, 255, 255, 0.48);
+    /* box-shadow: 6px 2px 16px 0px rgba(80, 84, 88, 0.48), -6px -2px 16px 0px rgba(0, 0, 0, 0.8); */
+    color: rgb(10, 9, 9);
     border-radius: 20px;
+    /* border: 2px solid grey; */
 }
 
-.content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-}
-
-.content h2{
-    text-align: center;
-    font-weight: 700;
-    line-height: 1em;
-
-}
-.content h2 span{ 
-    color: #e21212;
-    font-size: 0.8em;
-
-
-}
-
-.social_icons{
-    position: relative;
-    display: flex;
-    margin-top: 10px;
-    
-}
-.icons{
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    background: #333;
+.c {
     color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    margin: 5px;
-    font-size: 18px;
-    transition: 0.2s;
-    border-radius: 5px;
-}
-.icons:hover{
-    background: red;
+    font-size: 1.4rem;
 }
 
-.c{
+.hhh {
+    font-size: 3rem;
     color: white;
-   
-    font-size: 2rem;
-}
-.hhh{
-    font-size: 4rem;
-    text-transform: uppercase;
-    font-weight: bold;
 }
 
-
-
-@media screen and (max-width: 500px) {
-  
-    .card{
-        position: relative;
-        width: 300px;
-        height: 300px;
-        background: #fff;
-        transform-style: preserve-3d;
-        transform: perspective(1000px);
-        box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
-        margin: 1.5rem;
-        border-radius: 20px;
-        
+@media screen and (max-width: 800px) {
+    .card:hover {
+        transform: translateX(0) ;
+    }
+    .imgBox {
+        height: 60vh;
+        width: 60vw;
     }
     .c{
-        color: white;
-        font-family: 'Alumni Sans', sans-serif;
-        font-family: 'Alumni Sans', sans-serif;
+        color: white;   
+        font-size: 1rem;
+    }
+    .hhh{
+        font-size: 2rem;
+    }
+    .details{
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card:hover {
+        transform: translateX(0) ;
+    }
+    .imgBox {
+        height: 60vh;
+        width: 60vw;
+    }
+    .c{
+        color: white;   
         font-size: 0.8rem;
     }
-    .card:hover{
-        transform: translateX(10%) ;
-        
+    .hhh{
+        font-size: 2rem;
     }
-  }
-  
-  
-  
+    .details{
+        width: 60vw;
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card:hover {
+        transform: translateX(0) ;
+    }
+    .imgBox {
+        height: 60vh;
+        width: 80vw;
+    }
+    .c{
+        color: white;   
+        font-size: 0.8rem;
+    }
+    .hhh{
+        font-size: 2rem;
+    }
+    .details{
+        width: 80vw;
+        height: 70vh;
+    }
+}
